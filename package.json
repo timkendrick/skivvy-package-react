@@ -1,0 +1,48 @@
+{
+  "name": "@timkendrick/skivvy-package-react-app",
+  "version": "0.0.1",
+  "description": "ESLint/Mocha/ES6/JSX/Browserify/Stylus app tasks",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "test"
+  ],
+  "scripts": {
+    "prepublish": "npm test",
+    "test": "eslint index.js lib test && mocha --reporter spec"
+  },
+  "keywords": [
+    "skivvy-package"
+  ],
+  "author": "Tim Kendrick <timkendrick@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@skivvy/skivvy-package-browserify": "^0.1.3",
+    "@skivvy/skivvy-package-clean": "^0.1.5",
+    "@skivvy/skivvy-package-copy": "^0.1.3",
+    "@skivvy/skivvy-package-eslint": "^0.1.1",
+    "@skivvy/skivvy-package-mocha": "^0.1.3",
+    "@skivvy/skivvy-package-serve": "^0.1.0",
+    "@skivvy/skivvy-package-stylus": "^0.1.2",
+    "@skivvy/skivvy-package-watch": "^0.1.1"
+  },
+  "devDependencies": {
+    "@skivvy/project-base": "^0.1.3",
+    "chai": "^2.0.0",
+    "eslint": "latest",
+    "mocha": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timkendrick/skivvy-package-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/timkendrick/skivvy-package-react/issues"
+  },
+  "homepage": "https://github.com/timkendrick/skivvy-package-react#readme"
+}
