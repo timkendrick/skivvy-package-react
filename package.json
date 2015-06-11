@@ -10,7 +10,8 @@
   "files": [
     "index.js",
     "lib",
-    "test"
+    "test",
+    "templates"
   ],
   "scripts": {
     "prepublish": "npm test",
@@ -29,7 +30,10 @@
     "@skivvy/skivvy-package-mocha": "^0.1.3",
     "@skivvy/skivvy-package-serve": "^0.1.0",
     "@skivvy/skivvy-package-stylus": "^0.1.2",
-    "@skivvy/skivvy-package-watch": "^0.1.1"
+    "@skivvy/skivvy-package-watch": "^0.1.1",
+    "babel-eslint": "^3.1.15",
+    "eslint-plugin-react": "^2.5.0",
+    "skivvy-factory": "^0.1.2"
   },
   "devDependencies": {
     "@skivvy/project-base": "^0.1.3",
