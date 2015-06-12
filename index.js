@@ -4,7 +4,9 @@ exports.tasks = {
 	'test': require('./lib/tasks/test'),
 	'build': require('./lib/tasks/build'),
 	'serve': require('./lib/tasks/serve'),
-	'create-component': require('./lib/tasks/create-component')
+	'create-app': require('./lib/tasks/create-app'),
+	'create-component': require('./lib/tasks/create-component'),
+	'create-view': require('./lib/tasks/create-view')
 };
 
 exports.defaults = {
