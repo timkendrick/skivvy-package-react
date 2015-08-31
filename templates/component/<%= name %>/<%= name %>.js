@@ -1,16 +1,19 @@
-var React = require('react');
-var PureRenderMixin = require('react/addons').addons.PureRenderMixin;
+import React from 'react';
+import addons from 'react/addons';
+const { addons: { PureRenderMixin } } = addons;
 
-var <%= name %> = React.createClass({
+import <%= name %>Template from './<%= name %>.jsx';
 
-	render: require('./<%= name %>.jsx'),
+export default React.createClass({
+
+	displayName: '<%= name %>',
 
 	propTypes: {
 	},
 
 	mixins: [
 		PureRenderMixin
-	]
-});
+	],
 
-module.exports = <%= name %>;
+	render: <%= name %>Template
+});
