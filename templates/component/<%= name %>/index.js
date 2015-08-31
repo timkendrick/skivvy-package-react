@@ -1,2 +1,1 @@
-import <%= name %> from './<%= name %>.js';
-export default <%= name %>;
+export { default } from './<%= name %>.js';
