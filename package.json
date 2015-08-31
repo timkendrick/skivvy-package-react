@@ -1,6 +1,6 @@
 {
   "name": "@timkendrick/skivvy-package-react-app",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ESLint/Mocha/ES6/JSX/Browserify/Stylus app tasks",
   "main": "index.js",
   "directories": {
