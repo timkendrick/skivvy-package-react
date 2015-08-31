@@ -11,22 +11,21 @@ describe('package', function() {
 		expect(packageModule.tasks['test']).to.be.a('function');
 		expect(packageModule.tasks['build']).to.be.a('function');
 		expect(packageModule.tasks['serve']).to.be.a('function');
+		expect(packageModule.tasks['create-app']).to.be.a('function');
+		expect(packageModule.tasks['create-view']).to.be.a('function');
+		expect(packageModule.tasks['create-component']).to.be.a('function');
 	});
 
 	it('should specify default package configuration', function() {
 		expect(packageModule.defaults).to.eql({
 			source: {
-				index: null,
-				scripts: null,
-				styles: null,
-				assets: null,
-				tests: null
+				scripts: 'src/scripts',
+				styles: 'src/styles',
+				templates: 'src/templates',
+				assets: 'src/assets'
 			},
-			destination: {
-				root: null,
-				js: null,
-				css: null
-			},
+			tests: 'test',
+			destination: 'dist',
 			port: 3000,
 			debug: false
 		});
